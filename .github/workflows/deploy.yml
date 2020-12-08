@@ -18,8 +18,8 @@ jobs:
       run: |
         echo -e "\
         VUE_APP_PUBLIC_PATH=/d2-crud-v2-demos/preview/\
-        " > .env.preview.local
-        cat .env.preview.local | while read line
+        " > .env.local
+        cat .env.local | while read line
         do
           echo $line
         done
@@ -63,8 +63,8 @@ jobs:
       run: |
         echo -e "\
         VUE_APP_PUBLIC_PATH=/d2-crud-v2-demos/preview/\
-        " > .env.preview.local
-        cat .env.preview.local | while read line
+        " > .env.local
+        cat .env.local | while read line
         do
           echo $line
         done
@@ -93,8 +93,8 @@ jobs:
       run: |
         echo -e "\
         VUE_APP_PUBLIC_PATH=/d2-crud-v2-demos/\
-        " > .env.preview.local
-        cat .env.preview.local | while read line
+        " > .env.local
+        cat .env.local | while read line
         do
           echo $line
         done

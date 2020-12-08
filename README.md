@@ -1,24 +1,5 @@
 # d2-crud-v2-demos
 
-## Project setup
-```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+* https://d2.pub/d2-crud-v2-demos/preview/
+* https://cdn.d2.pub/d2-crud-v2-demos/preview/
+* https://d2-projects.github.io/d2-crud-v2-demos/
