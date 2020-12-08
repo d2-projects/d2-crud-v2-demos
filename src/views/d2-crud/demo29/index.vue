@@ -24,6 +24,30 @@
 import '../install'
 import doc from './doc.md'
 import code from './code.js'
+import faker from 'faker/locale/zh_CN'
+import { map, random } from 'lodash'
+
+function DEMO_BUSINESS_TABLE_1_LIST ({ pageSize = 10 } = {}) {
+  return new Promise(resolve => {
+    setTimeout(() => {
+      resolve({
+        page: {
+          total: 1000
+        },
+        list: map(Array(pageSize), () => ({
+          key: faker.random.uuid(),
+          value: [10, 100, 200, 500][random(0, 3)],
+          type: faker.random.boolean(),
+          admin: faker.name.firstName() + faker.name.lastName(),
+          adminNote: faker.random.words(),
+          dateTimeCreat: faker.date.past(),
+          used: faker.random.boolean(),
+          dateTimeUse: faker.date.past()
+        }))
+      })
+    }, 1000)
+  })
+}
 
 export default {
   data () {
@@ -72,7 +96,7 @@ export default {
     },
     fetchData () {
       this.loading = true
-      this.$api.DEMO_BUSINESS_TABLE_1_LIST({
+      DEMO_BUSINESS_TABLE_1_LIST({
         ...this.pagination
       }).then(res => {
         this.data = res.list

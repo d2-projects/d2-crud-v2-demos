@@ -55,7 +55,7 @@ export default {
     },
     fetchData () {
       this.loading = true
-      this.$api.DEMO_BUSINESS_TABLE_1_LIST({
+      DEMO_BUSINESS_TABLE_1_LIST({
         ...this.pagination
       }).then(res => {
         this.data = res.list
