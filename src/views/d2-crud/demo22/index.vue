@@ -96,9 +96,9 @@ export default {
         saveLoading: false
       },
       addRules: {
-        date: [ { required: true, message: '请输入日期', trigger: 'blur' } ],
-        name: [ { required: true, message: '请输入姓名', trigger: 'blur' } ],
-        address: [ { required: true, message: '请输入地址', trigger: 'blur' } ]
+        date: [{ required: true, message: '请输入日期', trigger: 'blur' }],
+        name: [{ required: true, message: '请输入姓名', trigger: 'blur' }],
+        address: [{ required: true, message: '请输入地址', trigger: 'blur' }]
       }
     }
   },
